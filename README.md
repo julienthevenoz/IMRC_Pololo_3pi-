@@ -29,6 +29,6 @@ It happened two times that 3pi+ suddenly locked up its permissions and didn't al
 
 
 
-References : 
-Collective Intelligence from a Synthetic and Biological Perspective Summer School :       http://modelai.gettysburg.edu/2024/collective/
-Pololu 3pi+ 2040 User guide :     https://www.pololu.com/docs/0J86/all
+References : <br />
+Collective Intelligence from a Synthetic and Biological Perspective Summer School :       http://modelai.gettysburg.edu/2024/collective/  <br />
+Pololu 3pi+ 2040 User guide :     https://www.pololu.com/docs/0J86/all  <br />
