@@ -9,7 +9,7 @@ To start using my code, simply paste the files "J_controler.py" "J_state_estimat
 (NB in the repo the logs folder contains three examples of data log files and the corresponding pdf containing the plots. These files are not needed for the robot to work, you can delete them. The trajectories folder MUST contain the 3 pre-programmed trajectories though).
 When you turn on your 3pi+ robot, simply select the "J_controler.py" program on the display screen and follow the instructions. (I use Kx = 1, Ky = 3, Ktheta = 3 for my gains).
 
-The three pre-programmed trajectories are stored in a .json format. They were generated with a planner from They contain a dictionary with lots of mostly useless info. The only two important items of the this dict are "states" and "actions" (if you want to modify or create your own trajectories, you can get rid of all the other items).
+The three pre-programmed trajectories are stored in a .json format. They were generated with an unycicle-model planner Quim Ortiz' Dynobench repo. from  They contain a dictionary with lots of mostly useless info. The only two important items of the this dict are "states" and "actions" (if you want to modify or create your own trajectories, you can get rid of all the other items).
 states : list of states the robots has to pass through during the trajectory. Each state is [x position, y position, angle theta]. A 0.1 sec interval is assumed between each state, meaning state 38 corresponds to 3.8 sec after the start of the trajectory.
 actions : list of control actions that are needed by the controler
 
@@ -33,3 +33,4 @@ It happened two times that 3pi+ suddenly locked up its permissions and didn't al
 References : <br />
 Collective Intelligence from a Synthetic and Biological Perspective Summer School :       http://modelai.gettysburg.edu/2024/collective/  <br />
 Pololu 3pi+ 2040 User guide :     https://www.pololu.com/docs/0J86/all  <br />
+Dynobench : https://github.com/quimortiz/dynobench/tree/05bafb374e5b00e858d351e2e89d8f4b409f56ab  <br />
