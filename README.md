@@ -1,4 +1,4 @@
-This repository contains code for the 3pi+ 2040 Pololu Ground Robot. It has a simple state estimator based on odometry readings and a simple differential drive controler. To make gain tuning easier, you can choose a trajectory from a selection of three(straight line, pure rotation, slightly wavy diagonal)
+This repository contains code for the 3pi+ 2040 Pololu Ground Robot (NB we have the Hyper edition). It has a simple state estimator based on odometry readings and a simple differential drive controler. To make gain tuning easier, you can choose a trajectory from a selection of three(straight line, pure rotation, slightly wavy diagonal)
 and adjust the gains (Kx, Ky, Ktheta) you want to use directly with the robot buttons. (These two options are enabled by default). The state estimator logs some data of interest and there is also a script which plots this into neatly readable graphs.
 This code was written for the IMRC Lab of TU Berlin. It is also based on the Collective Intelligence from a Synthetic and Biological Perspective Summer School (http://modelai.gettysburg.edu/2024/collective/) of which Prof Hönig (IMRC head) was one of the organizers. For more information about the differential drive controler
 check out the /collision_avoidance/slides.pdf of the slides available on the website.
@@ -26,3 +26,9 @@ If the robot has very weird behavior (sudden acceleration in the wrong direction
 (ie until giving a positive speed to the motors makes the robot go in the direction where his bumpers are, not his USB port).
 
 It happened two times that 3pi+ suddenly locked up its permissions and didn't allow me to modify, delete or add files (no write access). Using chmod command did not work as I got the response "read-only filesystem". The solution I found was updating the MicroPython firmware again (see 3pi+ 2040 user guide ; careful this will delete all custom files on the 3pi+) and then I could do chmod to get write access
+
+
+
+References : 
+Collective Intelligence from a Synthetic and Biological Perspective Summer School :       http://modelai.gettysburg.edu/2024/collective/
+Pololu 3pi+ 2040 User guide :     https://www.pololu.com/docs/0J86/all
