@@ -1,6 +1,6 @@
 This repository contains code for the 3pi+ 2040 Pololu Ground Robot (NB we have the Hyper edition). It has a simple state estimator based on odometry readings and a simple differential drive controler. To make gain tuning easier, you can choose a trajectory from a selection of three(straight line, pure rotation, slightly wavy diagonal)
 and adjust the gains (Kx, Ky, Ktheta) you want to use directly with the robot buttons. (These two options are enabled by default). The state estimator logs some data of interest and there is also a script which plots this into neatly readable graphs.
-This code was written for the IMRC Lab of TU Berlin. It is also based on the Collective Intelligence from a Synthetic and Biological Perspective Summer School (http://modelai.gettysburg.edu/2024/collective/) of which Prof Hönig (IMRC head) was one of the organizers. For more information about the differential drive controler
+This code was written for the IMRC Lab of TU Berlin. It is also based on the Collective Intelligence from a Synthetic and Biological Perspective Summer School of which Prof Hönig (IMRC head) was one of the organizers. For more information about the differential drive controler
 check out the /collision_avoidance/slides.pdf of the slides available on the website.
 
 
